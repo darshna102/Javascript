@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="content">
+    <h1>Different Events Types in javascript</h1>
+    
+    <!-- <div class="button_container" >  -->
+        <div class="button_su">
+            <a href="#" class="button_su_inner" onclick="alert('I a, asowem,But no one use me')">
+                <span class="button_text_container">
+                    simple Inline alert()
+                </span>
+        </a>
+        </div>
+
+        <div class="button_su">
+            <a href="#" class="button_su_inner" onclick="callingFunction()">
+                <span class="button_text_container">
+               By Calling Function                
+            </span>
+        </a>
+        </div>
+
+        <div class="button_su"> 
+            <a href="#" class="button_su_inner" >
+                <span class="button_text_container" id="thirdway">
+                Inline event  
+                </span>
+              </a>
+        </div>
+
+        <div class="button_su">
+            <span class="su_button_circle">
+
+            </span>
+            <a href="#" class="button_su_inner" >
+                <span class="button_text_container" id="fourdway">
+                Event Listener 
+               </span>
+              </a>
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+        const callingFunction=()=>{
+            alert('most commonway to writing functions');
+        }
+        const thirdway= document.getElementById('thirdway');
+        thirdway.onclick=function(){
+            alert('most common way of writing a function');
+        }
+
+        const fourdway=document.querySelector('#fourdway');
+        fourdway.addEventListener('click',()=>{
+            alert('i love this way of writing');
+        })
+    </script>
+</body>
+</html>

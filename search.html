@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="para">Plz like the video</p>
+    <p class="para">Plz share the video</p>
+    <p>Don't forget subscribe my channel</p>
+    <h1 id="heading">change the content of the h1</h1>
+
+    <form action="">
+        <label for="">male</label>
+        <input type="radio" name="gender" id="">
+        <label for="">female</label>
+        <input type="radio" name="gender" id="">
+
+    </form>
+    <button onclick="changeContent()">click me</button>
+    <script>
+ const changeContent=()=>{
+            document.getElementById('heading').innerHTML="welcome javascript...."
+           console.log( document.getElementsByName('gender'));
+
+      document.querySelector('heading').innerHTML="i am changed";
+        }
+    </script>
+</body>
+</html>

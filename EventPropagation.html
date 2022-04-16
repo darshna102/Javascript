@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        div, p, a{
+            padding: 10px 30px;
+            display: block;
+            border: 5px solid rgb(223, 24, 24);
+            background: #fff;
+            height: 60px;
+            width: 10px;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parrentDiv" id="parentId">
+        <div class="childDiv" id="childId">
+
+        </div>
+        <script>
+            const parentId=document.getElementById('parentId');
+            const childId=document.getElementById('childId');
+            const parentCall=()=>{
+                alert('perent div call');
+                 console.log('perent div call');
+            }
+
+                const childCall=()=>{
+                alert('child div call');
+                console.log('child div call');
+
+            }
+            parentId.addEventListener('click',parentCall,true);
+            childId.addEventListener('click',childCall,true);
+        </script>
+    </div>
+</body>
+</html>
